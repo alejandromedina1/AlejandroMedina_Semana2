@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+#first-image {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    --bs-nav-link-color: white;
+    --bs-navbar-active-color: #DA0037;
+    --bs-nav-link-hover-color: #DA0037
+}
+
+#logo {
+    filter: invert(100%);
+}
+
+.nav-link:hover {
+    --bs-nav-link-color: #DA0037
+}
+
+#container-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    filter: drop-shadow(16px 16px 25px #070707)
+}
+
+#landing-image {
+    filter: grayscale(70%);
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #171717;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+#landing-front-image {
+    width: 50%;
+    border: 1px solid #000000;
+    border-radius: 50%;
+
+}
+
+#landing-title{
+    color: white;
+}
+#landing-subtitle{
+    color: white;
+}
+
+#landing-section {
+    background: black;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#biography-section{
+    background-color: #171717;
+    color: white;
+    min-height: 200px;
+}
+
+#biography-column-image{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    filter: drop-shadow(16px 16px 25px #070707)
+}
+
+#biography-column-info{
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+#section-biography-data{
+    margin-left: 5px;
+    border-style: solid;
+    border-color: #DA0037;
+    border-radius: 8px;
+}
+
+.col-info{
+    margin: 15px;
+    padding-top: 15px;
+}
+.action-button{
+    margin-top: 30px;
+}
+
+#album-section{
+    background-color: #171717;
+    color: white;
+    padding: 100px;
+    
+}
+
+#column-section-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+    height: 100%;
+    gap: 50px;
+}
+.card:hover{
+    transition: 0.5;
+    transform: scale(110%);
+    --bs-body-bg:#DA0037;
+}
+.card{
+    transition: 0.5;
+    transform: scale(100%);
+}
+
+#column-section-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    height: 100%;
+    gap: 50px;
+}
+
+#column-section-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 50px;
+    height: 100%;
+    gap: 50px;
+}
+
+.card{
+    --bs-body-bg:#171717;
+    --bs-card-bg: var(--bs-body-bg);
+    filter: drop-shadow(16px 16px 25px #070707)
+}
